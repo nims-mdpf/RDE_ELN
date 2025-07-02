@@ -1,0 +1,109 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://rde.nims.go.jp/rde/dataset-templates/ELNstandard_dataset_template_sample/catalog.schema.json",
+    "description": "None",
+    "type": "object",
+    "required": [
+        "custom"
+    ],
+    "properties": {
+        "custom": {
+            "type": "object",
+            "label": {
+                "ja": "固有情報",
+                "en": "Custom Information"
+            },
+            "required": [],
+            "properties": {
+                "eln_filename": {
+                    "label": {
+                        "ja": "入力ファイル名",
+                        "en": "eln_filename"
+                    },
+                    "type": "string"
+                },
+                "measurement_date": {
+                    "label": {
+                        "ja": "実験日",
+                        "en": "measurement_date"
+                    },
+                    "type": "string",
+                    "format": "date"
+                },
+                "dataName": {
+                    "label": {
+                        "ja": "実験名",
+                        "en": "dataName"
+                    },
+                    "type": "string",
+                    "options": {
+                        "widget": "textarea",
+                        "rows": 5,
+                        "placeholder": {
+                            "ja": "実験目的を記入",
+                            "en": "実験目的を記入"
+                        }
+                    }
+                },
+                "experimentId": {
+                    "label": {
+                        "ja": "実験番号",
+                        "en": "experimentId"
+                    },
+                    "type": "string",
+                    "options": {
+                        "widget": "textarea",
+                        "rows": 5,
+                        "placeholder": {
+                            "ja": "実験目的を記入",
+                            "en": "実験目的を記入"
+                        }
+                    }
+                },
+                "objective": {
+                    "label": {
+                        "ja": "実験目的",
+                        "en": "objective"
+                    },
+                    "type": "string",
+                    "options": {
+                        "widget": "textarea",
+                        "rows": 5,
+                        "placeholder": {
+                            "ja": "実験目的を記入",
+                            "en": "実験目的を記入"
+                        }
+                    }
+                },
+                "materials": {
+                    "label": {
+                        "ja": "試料",
+                        "en": "materials"
+                    },
+                    "type": "string",
+                    "options": {
+                        "placeholder": {
+                            "ja": "試料名を記入",
+                            "en": "試料名を記入"
+                        }
+                    }
+                },
+                "results": {
+                    "label": {
+                        "ja": "実験結果",
+                        "en": "results"
+                    },
+                    "type": "string",
+                    "options": {
+                        "widget": "textarea",
+                        "rows": 5,
+                        "placeholder": {
+                            "ja": "実験結果を記入",
+                            "en": "実験結果を記入"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

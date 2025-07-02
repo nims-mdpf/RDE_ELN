@@ -1,0 +1,5 @@
+system:
+    extended_mode: 'MultiDataTile'
+    save_nonshared_raw: True
+    magic_variable: True
+    save_thumbnail_image: True

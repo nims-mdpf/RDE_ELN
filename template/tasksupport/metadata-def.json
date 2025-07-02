@@ -1,0 +1,89 @@
+{
+    "temperature": {
+        "name": {
+            "ja": "温度",
+            "en": "temperature"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "C",
+        "order": 1
+    },
+    "pressure": {
+        "name": {
+            "ja": "圧力",
+            "en": "pressure"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "hPa",
+        "order": 2
+    },
+    "pH": {
+        "name": {
+            "ja": "pH",
+            "en": "pH"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "order": 3
+    },
+    "viscosity": {
+        "name": {
+            "ja": "粘度",
+            "en": "viscosity"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "Pa·s",
+        "order": 4
+    },
+    "density": {
+        "name": {
+            "ja": "密度",
+            "en": "density"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "g/cm³",
+        "order": 5
+    },
+    "item": {
+        "name": {
+            "ja": "アイテム",
+            "en": "item"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "variable": 1,
+        "order": 6
+    },
+    "val1": {
+        "name": {
+            "ja": "値1",
+            "en": "val1"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "variable": 1,
+        "order": 7
+    },
+    "val2": {
+        "name": {
+            "ja": "値2",
+            "en": "val2"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "variable": 1,
+        "order": 8
+    }
+}

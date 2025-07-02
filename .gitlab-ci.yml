@@ -1,0 +1,110 @@
+variables:
+  CI_TAGS: rde-ci-runner
+  WORK_DIR: "container"
+  WIKI_PROJECT_NAME: ""
+
+stages:
+  - test-py311
+  - coverage
+
+test-py311-flake8-job:
+  stage: test-py311
+  image: python:3.11
+  tags:
+    - ${CI_TAGS}
+  before_script:
+    - cd ${WORK_DIR}
+    - cp pip.conf /etc/pip.conf
+    - pip install tox
+  script:
+    - tox -e py311-flake8
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^test/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^refactor/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^develop/'
+      when: always
+
+test-py311-lizard-job:
+  stage: test-py311
+  image: python:3.11
+  tags:
+    - ${CI_TAGS}
+  before_script:
+    - cd ${WORK_DIR}
+    - cp pip.conf /etc/pip.conf
+    - pip install tox
+  script:
+    - tox -e py311-lizard
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^test/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^refactor/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^develop/'
+      when: always
+
+test-py311-mypy-job:
+  stage: test-py311
+  image: python:3.11
+  tags:
+    - ${CI_TAGS}
+  before_script:
+    - cd ${WORK_DIR}
+    - cp pip.conf /etc/pip.conf
+    - pip install tox
+  script:
+    - tox -e py311-mypy
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^test/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^refactor/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^develop/'
+      when: always
+
+test-py311-ruff-job:
+  stage: test-py311
+  image: python:3.11
+  tags:
+    - ${CI_TAGS}
+  before_script:
+    - cd ${WORK_DIR}
+    - cp pip.conf /etc/pip.conf
+    - pip install tox
+  script:
+    - tox -e py311-ruff
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^test/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^refactor/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^develop/'
+      when: always
+
+coverage-job:
+  stage: coverage
+  image: python:3.11
+  tags:
+    - ${CI_TAGS}
+  before_script:
+    - cd ${WORK_DIR}
+    - cp pip.conf /etc/pip.conf
+    - pip install tox
+  script:
+    - tox -e py311-module
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: container/coverage.xml
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^test/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ /^refactor/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH =~ $CI_DEFAULT_BRANCH'
+      when: always
+
