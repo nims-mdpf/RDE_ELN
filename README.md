@@ -13,7 +13,7 @@ RDE_ELNデータセットテンプレートは、エクセルファイル形式�
 
 機能などについては[ガイド](guide.md)を参照してください。
 
-詳細は[docs/manual/index.md](docs/manual/index.md)を参照してください。
+詳細は[docs/manual/index.md](docs/manual/eln_manual.md)を参照してください。
 
 RDEToolKitを用いて作成されています。
 
@@ -36,4 +36,4 @@ RDEToolKitを用いて作成されています。
 お問い合わせ フォーム<br>
 https://dice.nims.go.jp/contact/form.html
 
-2025.7.2 公開
+2025.7.3 公開
