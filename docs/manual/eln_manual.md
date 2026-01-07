@@ -502,3 +502,12 @@ def eln_module(
             )
 ```
 
+## データセットテンプレートシートについて
+
+　メタデータ定義(metadata-def.json)、送状定義(invoice.schema.json)、カタログ定義(catalog.schema.json)をエクセル形式のシートから生成することができるツールを以下に用意してあります。
+
+[RDE/データセットテンプレート生成、確認ツール](https://github.com/nims-mdpf/RDE_datasettemplate-schemafile-make-tool)
+
+　上記のツールで利用可能な本データセットテンプレート用のデータセットテンプレートシートは以下の通りです。
+
+- [templates](./RDEDatasetTemplateSheet_RDE_ELN.xlsx)
