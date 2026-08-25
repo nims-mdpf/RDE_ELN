@@ -7,7 +7,8 @@
         "schema": {
             "type": "number"
         },
-        "unit": "C"
+        "unit": "C",
+        "order": 1
     },
     "pressure": {
         "name": {
@@ -17,7 +18,8 @@
         "schema": {
             "type": "number"
         },
-        "unit": "hPa"
+        "unit": "hPa",
+        "order": 2
     },
     "pH": {
         "name": {
@@ -26,7 +28,8 @@
         },
         "schema": {
             "type": "number"
-        }
+        },
+        "order": 3
     },
     "viscosity": {
         "name": {
@@ -36,7 +39,8 @@
         "schema": {
             "type": "number"
         },
-        "unit": "Pa·s"
+        "unit": "Pa·s",
+        "order": 4
     },
     "density": {
         "name": {
@@ -46,7 +50,8 @@
         "schema": {
             "type": "number"
         },
-        "unit": "g/cm³"
+        "unit": "g/cm³",
+        "order": 5
     },
     "item": {
         "name": {
@@ -56,7 +61,8 @@
         "schema": {
             "type": "string"
         },
-        "variable": 1
+        "variable": 1,
+        "order": 6
     },
     "val1": {
         "name": {
@@ -66,7 +72,8 @@
         "schema": {
             "type": "number"
         },
-        "variable": 1
+        "variable": 1,
+        "order": 7
     },
     "val2": {
         "name": {
@@ -76,6 +83,7 @@
         "schema": {
             "type": "number"
         },
-        "variable": 1
+        "variable": 1,
+        "order": 8
     }
 }

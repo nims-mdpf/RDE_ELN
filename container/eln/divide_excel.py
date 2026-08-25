@@ -6,9 +6,8 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-from rdetoolkit.exceptions import StructuredError
 from rdetoolkit import rdelogger
-
+from rdetoolkit.exceptions import StructuredError
 
 logger = rdelogger.get_logger("job.failed")
 
