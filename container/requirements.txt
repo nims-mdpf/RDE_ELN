@@ -2,9 +2,9 @@
 chardet==5.2.0
 charset-normalizer==3.3.2
 numpy==1.26.4
-matplotlib==3.9.1
+matplotlib==3.9.4
 openpyxl==3.1.5
-pandas==2.2.0
-rdetoolkit==1.0.4
+pandas==2.2.3
+rdetoolkit==1.7.1
 scipy==1.14.1
 

@@ -1,7 +1,7 @@
 import os
 import shutil
 from typing import Union, List
-import pytest
+
 
 # setup_inputdata_folder関数（そのまま）
 def setup_inputdata_folder(inputdata_name: Union[str, List[str]]):
@@ -51,6 +51,7 @@ def setup_inputdata_folder(inputdata_name: Union[str, List[str]]):
         os.path.join(tasksupport_original_path, "rdeconfig.yaml"),
         os.path.join(destination_path, "tasksupport"),
     )
+
 
 class TestOutputCase1:
     """case1

@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://rde.nims.go.jp/rde/dataset-templates/RDEDatasetTemplateSheet_RDE_ELN/invoice.schema.json",
-    "description": "標準データセットテンプレートRDE_ELN用RDEデータセットテンプレート: 送状定義",
+    "$id": "https://rde.nims.go.jp/rde/dataset-templates/ELNstandard_dataset_template_sample/catalog.schema.json",
+    "description": "None",
     "type": "object",
     "required": [
         "custom"
@@ -37,10 +37,11 @@
                     },
                     "type": "string",
                     "options": {
+                        "widget": "textarea",
                         "rows": 5,
                         "placeholder": {
-                            "ja": "実験名を記入",
-                            "en": "Enter experiment name"
+                            "ja": "実験目的を記入",
+                            "en": "実験目的を記入"
                         }
                     }
                 },
@@ -51,10 +52,11 @@
                     },
                     "type": "string",
                     "options": {
+                        "widget": "textarea",
                         "rows": 5,
                         "placeholder": {
-                            "ja": "実験番号を記入",
-                            "en": "Enter experiment number"
+                            "ja": "実験目的を記入",
+                            "en": "実験目的を記入"
                         }
                     }
                 },
@@ -65,10 +67,11 @@
                     },
                     "type": "string",
                     "options": {
+                        "widget": "textarea",
                         "rows": 5,
                         "placeholder": {
                             "ja": "実験目的を記入",
-                            "en": "Enter purpose of experiment"
+                            "en": "実験目的を記入"
                         }
                     }
                 },
@@ -81,7 +84,7 @@
                     "options": {
                         "placeholder": {
                             "ja": "試料名を記入",
-                            "en": "Enter material"
+                            "en": "試料名を記入"
                         }
                     }
                 },
@@ -92,10 +95,11 @@
                     },
                     "type": "string",
                     "options": {
+                        "widget": "textarea",
                         "rows": 5,
                         "placeholder": {
                             "ja": "実験結果を記入",
-                            "en": "Enter result of experiment"
+                            "en": "実験結果を記入"
                         }
                     }
                 }
